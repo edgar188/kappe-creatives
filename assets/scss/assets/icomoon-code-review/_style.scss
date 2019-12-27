@@ -15,63 +15,75 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-star {
+.icon-info {
     &:before {
-        content: $icon-star;
-    }
-}
-.icon-search {
-    &:before {
-        content: $icon-search;
-    }
-}
-.icon-calendar {
-    &:before {
-        content: $icon-calendar;
-    }
-}
-.icon-add-to-fav {
-    &:before {
-        content: $icon-add-to-fav;
-    }
-}
-.icon-arrow-down {
-    &:before {
-        content: $icon-arrow-down;
-    }
-}
-.icon-nav {
-    &:before {
-        content: $icon-nav;
-    }
-}
-.icon-comment {
-    &:before {
-        content: $icon-comment;
+        content: $icon-info;
     }
 }
 
-.icon-arrow-left {
+.icon-filter {
     &:before {
-        content: $icon-arrow-left;
+        content: $icon-filter;
     }
 }
 
-.icon-arrow-right {
+.icon-phone {
     &:before {
-        content: $icon-arrow-right;
+        content: $icon-phone;
     }
 }
 
-.icon-picture-shape {
+.icon-phone2 {
     &:before {
-        content: $icon-picture-shape;
+        content: $icon-phone2;
     }
 }
 
-.icon-send {
+.icon-mail {
     &:before {
-        content: $icon-send;
+        content: $icon-mail;
+    }
+}
+
+.icon-pinterest-circular {
+    &:before {
+        content: $icon-pinterest-circular;
+    }
+}
+
+.icon-flickr {
+    &:before {
+        content: $icon-flickr;
+    }
+}
+ 
+.icon-pinterest {
+    &:before {
+        content: $icon-pinterest;
+    }
+}
+
+.icon-tumbler {
+    &:before {
+        content: $icon-tumbler;
+    }
+}
+
+.icon-vimeo {
+    &:before {
+        content: $icon-vimeo;
+    }
+}
+
+.icon-tumbler {
+    &:before {
+        content: $icon-tumbler;
+    }
+}
+  
+.icon-dribbble {
+    &:before {
+        content: $icon-dribbble;
     }
 }
 
@@ -80,46 +92,14 @@
         content: $icon-facebook;
     }
 }
-
-.icon-google-plus {
-    &:before {
-        content: $icon-google-plus;
-    }
-}
-
-.icon-instagram {
-    &:before {
-        content: $icon-instagram;
-    }
-}
-
-.icon-rss {
-    &:before {
-        content: $icon-rss;
-    }
-}
-
+  
 .icon-twitter {
     &:before {
         content: $icon-twitter;
     }
 }
 
-.icon-arrow-up {
-    &::before {
-        content: $icon-arrow-up;
-    }
-}
 
-.icon-close {
-    &::before {
-        content: $icon-close;
-    }
-}
 
-.icon-check {
-    &::before {
-        content: $icon-check;
-    }
-}
-  
+
+

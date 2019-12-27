@@ -1,22 +1,22 @@
-.primary-field {
-    padding: 10px;
-    border: 2px solid $color-br-primary;
-    border-radius: $br-default;
-    font-size: 0.875em;
-    color: $color-text-primary;
-    &::placeholder {
-        @extend .text-capitalize;
-        color: $color-text-primary;
-    }
-}
+// .primary-field {
+//     padding: 10px;
+//     border: 2px solid $color-br-primary;
+//     border-radius: $br-default;
+//     font-size: 0.875em;
+//     color: $color-text-primary;
+//     &::placeholder {
+//         @extend .text-capitalize;
+//         color: $color-text-primary;
+//     }
+// }
 
-.primary-select {
-    padding: 15px 20px 15px 5px;
-    font-size: 0.875em;
-    border: none;
-    border-radius: $br-default;
-    color: $color-primary;
-    -webkit-appearance: none;
-    @include bg-img($images-folder + "header/arrow-down.png", no-repeat, null, null, right);
-    cursor: pointer;
-}
+// .primary-select {
+//     padding: 15px 20px 15px 5px;
+//     font-size: 0.875em;
+//     border: none;
+//     border-radius: $br-default;
+//     color: $color-primary;
+//     -webkit-appearance: none;
+//     @include bg-img($images-folder + "header/arrow-down.png", no-repeat, null, null, right);
+//     cursor: pointer;
+// }
