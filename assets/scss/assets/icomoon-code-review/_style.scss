@@ -1,0 +1,125 @@
+@import "variables";
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: $font-icons !important;
+//   speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star {
+    &:before {
+        content: $icon-star;
+    }
+}
+.icon-search {
+    &:before {
+        content: $icon-search;
+    }
+}
+.icon-calendar {
+    &:before {
+        content: $icon-calendar;
+    }
+}
+.icon-add-to-fav {
+    &:before {
+        content: $icon-add-to-fav;
+    }
+}
+.icon-arrow-down {
+    &:before {
+        content: $icon-arrow-down;
+    }
+}
+.icon-nav {
+    &:before {
+        content: $icon-nav;
+    }
+}
+.icon-comment {
+    &:before {
+        content: $icon-comment;
+    }
+}
+
+.icon-arrow-left {
+    &:before {
+        content: $icon-arrow-left;
+    }
+}
+
+.icon-arrow-right {
+    &:before {
+        content: $icon-arrow-right;
+    }
+}
+
+.icon-picture-shape {
+    &:before {
+        content: $icon-picture-shape;
+    }
+}
+
+.icon-send {
+    &:before {
+        content: $icon-send;
+    }
+}
+
+.icon-facebook {
+    &:before {
+        content: $icon-facebook;
+    }
+}
+
+.icon-google-plus {
+    &:before {
+        content: $icon-google-plus;
+    }
+}
+
+.icon-instagram {
+    &:before {
+        content: $icon-instagram;
+    }
+}
+
+.icon-rss {
+    &:before {
+        content: $icon-rss;
+    }
+}
+
+.icon-twitter {
+    &:before {
+        content: $icon-twitter;
+    }
+}
+
+.icon-arrow-up {
+    &::before {
+        content: $icon-arrow-up;
+    }
+}
+
+.icon-close {
+    &::before {
+        content: $icon-close;
+    }
+}
+
+.icon-check {
+    &::before {
+        content: $icon-check;
+    }
+}
+  

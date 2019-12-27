@@ -1,0 +1,47 @@
+//floats
+@each $key,$val in $resolutions {
+  @media (min-width: $val) {
+    // Alignment
+    .float-#{$key}-left {
+      float: left;
+    }
+    .float#{$key}-right {
+      float: right;
+    }
+  }
+}
+
+//fixes
+.clear-after {
+  @include clear-after;
+}
+
+// item to center
+.centered-axis-xy {
+  @include position(50%, auto, auto, 50%);
+  transform: translate(-50%, -50%);
+}
+
+// menu (buttons)
+.menu-top {
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+
+  .menu-item {
+    margin-right: 15px;
+  }
+
+  .menu-item:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.icon-star.active {
+  color: $color-icon-secondary;
+}
+
+.avatar {
+  max-width: 50px;
+  max-height: 50px;
+}

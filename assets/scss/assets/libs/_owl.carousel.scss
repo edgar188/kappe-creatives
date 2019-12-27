@@ -1,0 +1,165 @@
+ .owl-carousel {
+    display: none;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  
+    .owl-stage {
+      position: relative;
+      -ms-touch-action: pan-Y;
+      touch-action: manipulation;
+  
+      &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+      }
+    }
+  
+    .owl-stage-outer {
+      position: relative;
+      overflow: hidden;
+      transform: translate3d(0, 0, 0);
+    }
+  
+    .owl-wrapper {
+      visibility: hidden;
+      transform: translate3d(0, 0, 0);
+    }
+  
+    .owl-item {
+      transform: translate3d(0, 0, 0);
+      position: relative;
+      min-height: 1px;
+      float: left;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  
+    .owl-nav.disabled, .owl-dots.disabled {
+      display: none;
+    }
+  
+    .owl-prev, .owl-next {
+      background: none;
+      border: none;
+      padding: 0;
+      font: inherit;
+      @include position(45%, 0);
+      transform: translateY(-45%);
+      color: $color-light;
+      opacity: 1;
+      cursor: pointer;
+      user-select: none;
+    }
+    .owl-prev {
+      @include position(45%, auto, auto, 0);
+    } 
+    
+    .owl-dot {
+      cursor: pointer;
+      user-select: none;
+    }
+  
+    button.owl-dot {
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+    }
+  
+    &.owl-loaded {
+      display: block;
+    }
+  
+    &.owl-loading {
+      opacity: 0;
+      display: block;
+    }
+  
+    &.owl-hidden {
+      opacity: 0;
+    }
+  
+    &.owl-refresh .owl-item {
+      visibility: hidden;
+    }
+  
+    &.owl-drag .owl-item {
+      touch-action: pan-y;
+      user-select: none;
+    }
+  
+    &.owl-grab {
+      cursor: move;
+      cursor: grab;
+    }
+  
+    &.owl-rtl {
+      direction: rtl;
+      .owl-item {
+        float: right;
+      }
+    }
+  }
+  
+// ------------------------- owl-nav, owl-dots ---------------------------------
+
+  .owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: 10px;
+    [class*=owl-] {
+      color: #FFF;
+      margin: 5px;
+      padding: 4px 7px;
+      display: inline-block;
+      cursor: pointer;
+      border-radius: 3px;
+
+      &:hover {
+        color: #7dc855;
+        text-decoration: none;
+      }
+    }
+
+    .disabled {
+      opacity: 0.5;
+      cursor: default;
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    &.disabled + .owl-dots {
+      margin-top: 10px;
+    }
+}
+
+  .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+
+    span {
+      width: 10px;
+      height: 10px;
+      margin: 5px 7px;
+      background: #D6D6D6;
+      display: block;
+      transition: opacity .2s ease;
+      border-radius: 30px;
+    }
+
+    &.active, &:hover {
+      span {
+        background: #869791;
+      }
+    }
+  }
+  

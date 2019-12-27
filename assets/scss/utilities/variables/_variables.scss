@@ -1,0 +1,76 @@
+//paths
+$fonts-folder: "../fonts";
+$images-folder: '../img/';
+
+//fonts
+$font-primary: "Roboto", serif;
+$font-secondary: "Robotolight", serif;
+$font-tertiary: "Robotomedium", serif;
+$font-quadratic: "Robotoblack", serif;
+$font-icons: "icomoon-restaurant";
+
+//Color Usage
+$color-light: #fff;
+$color-dark: #43484d;
+$color-primary: #5e6977;
+$color-secondary: #358ed7;
+$color-tertiary: #7dc855;
+
+//Text Base Colors
+$color-text-primary: #86939e;
+$color-text-soc: #dee2e7;
+
+//Background Base Colors
+$color-bg-primary: #f2f2f2;
+$color-bg-secondary: #f0f3f6;
+$color-bg-popup: #838cc7;
+$color-bg-btn-1: #53bbb3;
+$color-bg-btn-2: #e74a4a;
+$color-bg-btn-3: #2F8CDA;
+$color-bg-btn-4: #bdc6cf;
+$color-bg-btn-disabled: #d9d9d9;
+
+//Font Icon Base Colors
+$color-icon-primary: #bdc6cf;
+$color-icon-secondary: #afa072;
+
+// Border Colors
+$color-br-primary: #e1e8ee;
+$color-br-secondary: #9ca3d2;
+$color-br-tertiary: #5da5df;
+
+//Text
+$base-font-size: 16px;
+
+//Border Radiuses
+$br-default: 4px;
+$br-md: 10px;
+$br-lg: 30px;
+$br-rounded: 50%;
+$br-none: 0;
+
+// Transitions
+$trns-duration: .3s;
+$trns-duration-md: 0.5s;
+$trns-duration-lg: 1s;
+$trns-delay: 50ms;
+
+// Box Shadow
+$box-shadow-primary: 0 0 8px rgba(0.5,0.5,0.5,0.2);
+
+//Container
+$cont-width: 1138px;
+$cont-padding: 0px;
+
+//Resolutions
+$screen-lg: 1280px;
+$screen-md: 1024px;
+$screen-sm: 768px;
+$screen-xs: 480px;
+$screen-xxs: 360px;
+
+// Responsive multiply size values
+$mlp-val-lg: 0.9;
+$mlp-val-md: 0.8;
+$mlp-val-sm: 0.7;
+$mlp-val-xs: 0.6;
