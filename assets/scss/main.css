@@ -135,16 +135,20 @@ a:hover {
   content: "";
 }
 
+.icon-arrow-right:before {
+  content: "";
+}
+
 .icon-phone:before {
   content: "";
 }
 
-.icon-phone2:before {
-  content: "";
-}
-
 .icon-mail:before {
   content: "";
+}
+
+.icon-home:before {
+  content: "";
 }
 
 .icon-pinterest-circular:before {
@@ -589,6 +593,21 @@ button::-moz-focus-inner {
     padding-right: 6px;
   }
 }
+.main {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.menu {
+  max-width: 300px;
+  width: 15%;
+}
+
+.home {
+  width: 85%;
+}
+
 @media (min-width: 360px) {
   .cols-xxs-12 {
     flex-wrap: wrap;

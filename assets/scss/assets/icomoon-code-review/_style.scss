@@ -27,21 +27,27 @@
     }
 }
 
+.icon-arrow-right {
+    &:before {
+        content: $icon-arrow-right;
+    }
+}
+
 .icon-phone {
     &:before {
         content: $icon-phone;
     }
 }
 
-.icon-phone2 {
-    &:before {
-        content: $icon-phone2;
-    }
-}
-
 .icon-mail {
     &:before {
         content: $icon-mail;
+    }
+}
+
+.icon-home {
+    &:before {
+        content: $icon-home;
     }
 }
 
@@ -98,8 +104,6 @@
         content: $icon-twitter;
     }
 }
-
-
 
 
 
