@@ -20,28 +20,28 @@ body {
 
 a {
   &:hover {
-    opacity: 0.7;
+    opacity: 1;
   }
 }
 
-.container {
-  width: 90%;
-  max-width: ($cont-width + $cont-padding);
-  padding-left: ($cont-padding / 2);
-  padding-right: ($cont-padding / 2);
-  margin-left: auto;
-  margin-right: auto;
-}
+// .container {
+//   width: 90%;
+//   max-width: ($cont-width + $cont-padding);
+//   padding-left: ($cont-padding / 2);
+//   padding-right: ($cont-padding / 2);
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 
-.section-head {
-  font-size: 1.625em;
-  font-family: $font-secondary;
-  color: $color-dark;
-}
+// .section-head {
+//   font-size: 1.625em;
+//   font-family: $font-secondary;
+//   color: $color-dark;
+// }
 
-.block-wrapper {
-  background-color: $color-light;
-  border-radius: $br-md;
-  box-shadow: $box-shadow-primary;
-}
+// .block-wrapper {
+//   background-color: $color-light;
+//   border-radius: $br-md;
+//   box-shadow: $box-shadow-primary;
+// }
 

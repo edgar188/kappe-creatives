@@ -1,5 +1,5 @@
 .menu {
-    width: 300px;
+    min-width: 300px;
     min-height: 100vh;
     text-align: right;
     background-color: #242b2e;
@@ -8,9 +8,11 @@
 .logo-container {
     text-align: center;
     background-color: #fff;
+    
 }
 
-.logo {
+.logo-link {
+    display: inline-block;
     margin-top: 48px;
     margin-bottom: 35px;
 }
@@ -28,9 +30,11 @@
         color: #242b2e;
     }
     &.active {
-        color: #fff;
         background-color: #2fbab8;
         border-color: #169291;
+        &:hover {
+            color: #fff;
+        }
         .nav-link {
             cursor: default;
         }
@@ -39,7 +43,6 @@
     .nav-link {
         padding: 25px;
         display: block;
-        opacity: 1;
     }
 }
 
@@ -61,6 +64,7 @@
 .filter-list {
     color: #6b7072;
     font-size: 13px;
+    text-transform: lowercase;
 }
 
 .filter-item {
@@ -68,14 +72,19 @@
     padding-bottom: 15px;
 }
 
+.filter-link {
+    &:hover {
+        color: #fff;
+    }
+    &.active {
+        color: #fff;
+        text-transform: uppercase;
+        cursor: default;
+    }
+}
+
 .socials-container {
     padding: 25px;
-
-    span {
-        margin-top: 22px;
-        display: inline-block;
-        font-size: 12px;
-    }
 }
 
 .socials-list {
@@ -86,9 +95,33 @@
 .socials-item {
     display: inline-block;
     margin-left: 5px;
-    background: cadetblue;
     border-radius: 4px;
     padding: 2px;
     padding-bottom: 0;
+
+    &.flickr {
+        background-color: #fff;
+        color: #ff008b;
+    }
+    &.tumbler {
+        background-color: #d24f26;
+    }
+    &.twitter, &.vimeo {
+        background-color: #39bde8;
+    }
+    &.pinterest {
+        background-color: #e63527;
+    }
+    &.dribbble {
+        background-color: #ff6cbe;
+    }
+    &.facebook {
+        background-color: #345091;
+    }
+}
+
+.rights-text {
+    margin-top: 22px;
+    font-size: 12px;
 }
 
