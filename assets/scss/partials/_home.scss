@@ -1,5 +1,5 @@
 .home {
-    width: auto; //85%
+    width: auto;
 }
 
 .home-list {
@@ -18,22 +18,13 @@
 }
 
 .hover-content {
-    position: absolute;
-    top: 0;
-    left: 0;
+    @include position(0, null, null, 0);
     text-align: center;
-    color: #fff;
-    opacity: 0;
     width: 100%;
     height: 100%;
-    background-color: #2fbab8;
-}
-
-.hover-inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: $color-light;
+    background-color: $color-primary;
 }
 
 .home-img {
@@ -44,29 +35,29 @@
 }
 
 .hover-link {
-    padding: 20px;
-    border: 1px solid #fff;
-    border-radius: 50%;
     display: inline-block;
+    padding: 20px;
     margin-top: 15px;
+    border: 1px solid $color-light;
+    border-radius: $br-rounded;
     &:hover {
-        color: yellow;
-        border-color: yellow;
+        color: $color-custom;
+        border-color: $color-custom;
     }
     i {
-        margin-left: 4px;
+        margin-left: 2px;
     }
 }
 
 .hover-title {
     text-transform: capitalize;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 .hover-desc {
     text-transform: lowercase;
     margin-top: 5px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #fff;
-    font-size: 12px;
+    border-bottom: 1px solid $color-light;
+    font-size: 0.75em;
 }

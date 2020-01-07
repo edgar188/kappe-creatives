@@ -1,3 +1,51 @@
 .info {
     @include position(0, 0, null, null, fixed);
+    text-align: right;
+}
+
+.icon-info-wrapper {
+    display: inline-block;
+    padding: 10px;
+    background: $color-primary;
+    cursor: pointer;
+    &:hover {
+        .icon-info-inner {
+            color: $color-custom;
+            border-color: $color-custom;
+        }
+    }
+}
+
+.icon-info-inner {
+    display: inline-block;
+    padding: 10px 15px;
+    color: $color-light;
+    background-color: $color-primary;
+    border: 1px solid $color-light;
+    border-radius: $br-rounded;
+    font-size: 1.75em;
+ }
+
+.info-list {
+    display: none;
+    visibility: hidden;
+    padding-left: 18px;
+    opacity: 0.8;
+    padding-right: 80px;
+    text-align: left;
+    font-size: 1.25em;
+    background-color: $color-dark;
+    color: $color-light;
+}
+
+.info-item {
+    padding-bottom: 20px;
+    &:first-of-type {
+        padding-top: 20px;
+    }
+}
+
+.info-text {
+    font-size: 1em;
+    margin-left: 12px;
 }

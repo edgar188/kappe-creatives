@@ -2,13 +2,12 @@
     min-width: 300px;
     min-height: 100vh;
     text-align: right;
-    background-color: #242b2e;
+    background-color: $color-bg-primary;
 }
 
-.logo-container {
+.logo-wrapper {
     text-align: center;
-    background-color: #fff;
-    
+    background-color: $color-light;
 }
 
 .logo-link {
@@ -18,43 +17,40 @@
 }
 
 .nav-list {
-    font-size: 18px;
-    color: #fff;
+    font-size: 1.125em;
+    color: $color-light;
     text-transform: uppercase;
 }
 
 .nav-item {
-    border-bottom: 1px solid #202426;
+    border-bottom: 1px solid $color-br-primary;
+    background-image: $ln-gradient-primary;
+
     &:hover {
-        background-color: #fff;
-        color: #242b2e;
+        background-image: $ln-gradient-secondary;
+        border-color: $color-br-secondary;
     }
     &.active {
-        background-color: #2fbab8;
-        border-color: #169291;
+        background-image: $ln-gradient-secondary;
+        border-color: $color-br-secondary;
         &:hover {
-            color: #fff;
+            color: $color-light;
         }
         .nav-link {
             cursor: default;
         }
     }
-
     .nav-link {
         padding: 25px;
         display: block;
     }
 }
 
-.filter-container {
+.filter-wrapper {
     padding-bottom: 10px;
-    border-bottom: 1px solid #202426;
-
-    h3 {
-        color: #1d9090;
-        font-size: 19px;
+    border-bottom: 1px solid $color-br-primary;
+    .inner-head {
         padding: 25px;
-
         i {
             margin-left: 12px;
         }
@@ -62,8 +58,7 @@
 }
 
 .filter-list {
-    color: #6b7072;
-    font-size: 13px;
+    font-size: 0.8125em;
     text-transform: lowercase;
 }
 
@@ -74,54 +69,50 @@
 
 .filter-link {
     &:hover {
-        color: #fff;
+        color: $color-light;
     }
     &.active {
-        color: #fff;
+        color: $color-light;
         text-transform: uppercase;
         cursor: default;
     }
 }
 
-.socials-container {
+.socials-wrapper {
     padding: 25px;
 }
 
 .socials-list {
-    color: #fff;
-    font-size: 20px;
+    color: $color-icon-primary;
+    font-size: 1.125em;
 }
 
 .socials-item {
     display: inline-block;
     margin-left: 5px;
-    border-radius: 4px;
-    padding: 2px;
-    padding-bottom: 0;
+    border-radius: $br-default;
+    
+    @each $key, $val in $social-colors {
+        &.#{$key} {
+            @if #{$key} == flickr {
+                color: $color-primary;
+            }
+            background-color: $val;
+        }
+    }
+    
+    &:hover {
+        opacity: 0.8;
+    }
 
-    &.flickr {
-        background-color: #fff;
-        color: #ff008b;
-    }
-    &.tumbler {
-        background-color: #d24f26;
-    }
-    &.twitter, &.vimeo {
-        background-color: #39bde8;
-    }
-    &.pinterest {
-        background-color: #e63527;
-    }
-    &.dribbble {
-        background-color: #ff6cbe;
-    }
-    &.facebook {
-        background-color: #345091;
+    i {
+        padding: 2px;
+        font-size: 1.125em;
     }
 }
 
 .rights-text {
     margin-top: 22px;
-    font-size: 12px;
+    font-size: 0.75em;
 }
 
