@@ -3,11 +3,13 @@
 }
 
 .home-list {
-    @include dsp-flex(wrap, space-evenly);
+    @include dsp-flex(wrap);
 }
 
 .home-item {
     position: relative;
+    width: 25%;
+    // flex-grow: 3;
     &:hover {
         .hover-content {
             opacity: $opacity-primary;
@@ -28,8 +30,6 @@
 .home-img {
     width: 100%;
     height: 100%;
-    max-width: 405px;
-    max-height: 320px;
 }
 
 .hover-link {
