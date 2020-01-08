@@ -16,6 +16,11 @@
     margin-bottom: 35px;
 }
 
+.logo {
+    max-width: 117px;
+    max-height: 61px;
+}
+
 .nav-list {
     font-size: 1.125em;
     color: $color-light;
@@ -40,10 +45,12 @@
             cursor: default;
         }
     }
-    .nav-link {
-        padding: 25px;
-        display: block;
-    }
+}
+
+.nav-link {
+    @include ofl-ellipsis;
+    padding: 25px;
+    display: block;
 }
 
 .filter-wrapper {
@@ -63,6 +70,8 @@
 }
 
 .filter-item {
+    @include ofl-ellipsis;
+    padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 15px;
 }
@@ -91,7 +100,7 @@
     display: inline-block;
     margin-left: 5px;
     border-radius: $br-default;
-    
+
     @each $key, $val in $social-colors {
         &.#{$key} {
             @if #{$key} == flickr {
@@ -100,11 +109,11 @@
             background-color: $val;
         }
     }
-    
-    &:hover {
-        opacity: 0.8;
-    }
 
+    &:hover {
+        opacity: $opacity-primary;
+    }
+    
     i {
         padding: 2px;
         font-size: 1.125em;
@@ -112,6 +121,7 @@
 }
 
 .rights-text {
+    @include ofl-ellipsis; 
     margin-top: 22px;
     font-size: 0.75em;
 }

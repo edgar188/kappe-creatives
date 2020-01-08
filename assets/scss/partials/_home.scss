@@ -3,26 +3,24 @@
 }
 
 .home-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    @include dsp-flex(wrap, space-evenly);
 }
 
 .home-item {
     position: relative;
     &:hover {
         .hover-content {
-            opacity: 0.8;
+            opacity: $opacity-primary;
         }
     }
 }
 
 .hover-content {
     @include position(0, null, null, 0);
-    text-align: center;
     width: 100%;
     height: 100%;
-    opacity: 0;
+    text-align: center;
+    opacity: $opacity-none;
     color: $color-light;
     background-color: $color-primary;
 }
@@ -56,8 +54,8 @@
 
 .hover-desc {
     text-transform: lowercase;
+    font-size: 0.75em;
     margin-top: 5px;
     padding-bottom: 15px;
     border-bottom: 1px solid $color-light;
-    font-size: 0.75em;
 }

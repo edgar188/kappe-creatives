@@ -190,6 +190,11 @@ body {
   margin-bottom: 35px;
 }
 
+.logo {
+  max-width: 117px;
+  max-height: 61px;
+}
+
 .nav-list {
   font-size: 1.125em;
   color: #fff;
@@ -214,7 +219,11 @@ body {
 .nav-item.active .nav-link {
   cursor: default;
 }
-.nav-item .nav-link {
+
+.nav-link {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: 25px;
   display: block;
 }
@@ -236,6 +245,10 @@ body {
 }
 
 .filter-item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 15px;
 }
@@ -294,6 +307,9 @@ body {
 }
 
 .rights-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin-top: 22px;
   font-size: 0.75em;
 }
@@ -319,9 +335,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  text-align: center;
   width: 100%;
   height: 100%;
+  text-align: center;
   opacity: 0;
   color: #fff;
   background-color: #1ab5b3;
@@ -356,10 +372,10 @@ body {
 
 .hover-desc {
   text-transform: lowercase;
+  font-size: 0.75em;
   margin-top: 5px;
   padding-bottom: 15px;
   border-bottom: 1px solid #fff;
-  font-size: 0.75em;
 }
 
 .info {
@@ -393,13 +409,18 @@ body {
 .info-list {
   display: none;
   visibility: hidden;
-  padding-left: 18px;
   opacity: 0.8;
+  padding-left: 18px;
   padding-right: 80px;
-  text-align: left;
   font-size: 1.25em;
+  text-align: left;
   background-color: #000;
   color: #fff;
+  transition: background-color 0.5s;
+}
+.info-list:hover {
+  background-color: #1ab5b3;
+  opacity: 1;
 }
 
 .info-item {
@@ -1969,8 +1990,6 @@ body {
 .centered-axis-xy {
   position: absolute;
   top: 50%;
-  right: auto;
-  bottom: auto;
   left: 50%;
   transform: translate(-50%, -50%);
 }

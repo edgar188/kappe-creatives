@@ -29,13 +29,18 @@
 .info-list {
     display: none;
     visibility: hidden;
+    opacity: $opacity-primary;
     padding-left: 18px;
-    opacity: 0.8;
     padding-right: 80px;
-    text-align: left;
     font-size: 1.25em;
+    text-align: left;
     background-color: $color-dark;
     color: $color-light;
+    transition: background-color $trns-duration-md;
+    &:hover {
+        background-color: $color-primary; 
+        opacity: $opacity-default;
+    }
 }
 
 .info-item {
