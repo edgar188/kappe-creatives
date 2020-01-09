@@ -1,4 +1,38 @@
-@media (max-width: $screen-md) {
+@media (max-width: map-get($resolutions, md)) {
 
+    .p-5 {
+        padding: 15px;
+    }
+
+    // --------------------- Menu section ---------------------
+    .menu {
+        min-width: 220px;
+    }
+
+    .logo-link {
+        margin-top: round(48px * map-get($mlp-values, md));
+        margin-bottom: round(35px * map-get($mlp-values, md));
+    }
+
+    .socials-list {
+        font-size: 1em;
+    }
+
+    // --------------------- Home section ---------------------
     
+    .home {
+        font-size: map-get($font-sizes, bs);
+    }
+
+    .home-item {
+        width: 50%;
+    }
+
+    .socials-item {
+        i {
+            padding: 0;
+        }
+    }
+
+
 }

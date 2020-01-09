@@ -1,35 +1,26 @@
-//paths
+//paths ---------------------------
 $fonts-folder: "../fonts";
 $images-folder: '../img/';
 
-//fonts
+//fonts ---------------------------
 $font-primary: "Robotolight", serif;
 $font-secondary: "Robotothin", serif;
 $font-icons: "icomoon-kappe";
 
-//Color Usage
+//Color Usage ---------------------------
 $color-light: #fff;
 $color-dark: #000;
 $color-primary: #1ab5b3;
 $color-custom: #FFDD00;
-// $color-secondary: #358ed7;
-// $color-tertiary: #7dc855;
 
-//Text Base Colors
+//Text Base Colors ---------------------------
 $color-text-primary: #6b7072;
-// $color-text-soc: #dee2e7;
 
-//Background Base Colors
+//Background Base Colors ---------------------------
 $color-bg-primary: #242b2e;
-// $color-bg-secondary: #f0f3f6;
-// $color-bg-popup: #838cc7;
-// $color-bg-btn-1: #53bbb3;
-// $color-bg-btn-2: #e74a4a;
-// $color-bg-btn-3: #2F8CDA;
-// $color-bg-btn-4: #bdc6cf;
-// $color-bg-btn-disabled: #d9d9d9;
+$color-bg-custom: #dd3427;
 
-// Social Icons Background Colors
+// Social Icons Background Colors ---------------------------
 $social-colors: (
     flickr: #fbfbfb,
     tumbler: #d24f26,
@@ -40,56 +31,55 @@ $social-colors: (
     facebook: #375395
 );
 
-//Font Icon Base Colors
-$color-icon-primary: #fff;
-// $color-icon-secondary: #afa072;
-
-// Border Colors
+// Border Colors ---------------------------
 $color-br-primary: #202426;
 $color-br-secondary: #169291;
-// $color-br-tertiary: #5da5df;
 
-//Text
-$base-font-size: 16px;
+//Text ---------------------------
+$font-bs: 16px;
+$font-lg: 15px;
+$font-md: 14px;
+$font-sm: 13px;
 
-//Border Radiuses
+//Border Radiuses ---------------------------
 $br-default: 4px;
 $br-md: 10px;
 $br-lg: 30px;
 $br-rounded: 50%;
 $br-none: 0;
 
-// Transitions
+// Transitions ---------------------------
 $trns-duration: .3s;
 $trns-duration-md: 0.5s;
 $trns-duration-lg: 1s;
 $trns-delay: 50ms;
 
-// Opacities
+// Opacities ---------------------------
 $opacity-default: 1;
 $opacity-none: 0;
 $opacity-primary: 0.8;
+$opacity-secondary: 0.6;
 
 // Box Shadow
-// $box-shadow-primary: 0 0 8px rgba(0.5,0.5,0.5,0.2);
+$box-shadow-primary: 10px 0 20px 10px rgba(36, 43, 46, $opacity-secondary);
 
-// Gradients
-$ln-gradient-primary: inear-gradient(#333a3e, #2f373b);
-$ln-gradient-secondary: linear-gradient(#22adab, #24afad);
+// Gradients ---------------------------
+$ln-grad-primary: inear-gradient(#333a3e, #2f373b);
+$ln-grad-secondary: linear-gradient(#22adab, #24afad);
 
 //Container
 // $cont-width: 1138px;
 // $cont-padding: 0px;
 
-//Resolutions
+//Resolutions ---------------------------
 $screen-lg: 1280px;
 $screen-md: 1024px;
 $screen-sm: 768px;
 $screen-xs: 480px;
 $screen-xxs: 360px;
 
-// Responsive multiply size values
-// $mlp-val-lg: 0.9;
-// $mlp-val-md: 0.8;
-// $mlp-val-sm: 0.7;
-// $mlp-val-xs: 0.6;
+// Multiply size values for all devices
+$mlp-lg: 0.9;
+$mlp-md: 0.8;
+$mlp-sm: 0.7;
+$mlp-xs: 0.6;

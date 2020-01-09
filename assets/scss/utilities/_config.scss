@@ -1,9 +1,26 @@
+// Screen resolutions
 $resolutions: (
-  xxs: $screen-xxs,
-  xs: $screen-xs,
-  sm: $screen-sm,
+  lg: $screen-lg,
   md: $screen-md,
-  lg: $screen-lg
+  sm: $screen-sm,
+  xs: $screen-xs,
+  xxs: $screen-xxs
+) !default;
+
+// Text font sizes
+$font-sizes: (
+  bs: $font-bs,
+  lg: $font-lg, 
+  md: $font-md, 
+  sm: $font-sm
+) !default;
+
+// Multiply size values for all devices
+$mlp-values: (
+  lg: $mlp-lg, 
+  md: $mlp-md, 
+  sm: $mlp-sm,
+  xs:  $mlp-xs
 ) !default;
 
 $spaces: (

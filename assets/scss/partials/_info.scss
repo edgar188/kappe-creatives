@@ -5,7 +5,6 @@
 
 .icon-info-wrapper {
     display: inline-block;
-    padding: 10px;
     background: $color-primary;
     cursor: pointer;
     &:hover {
@@ -29,22 +28,24 @@
 .info-list {
     display: none;
     visibility: hidden;
-    opacity: $opacity-primary;
     padding-left: 18px;
     padding-right: 80px;
-    font-size: 1.25em;
     text-align: left;
+    opacity: $opacity-primary;
     background-color: $color-dark;
     color: $color-light;
     transition: background-color $trns-duration-md;
     &:hover {
-        background-color: $color-primary; 
+        background-color: $color-bg-custom; 
         opacity: $opacity-default;
     }
 }
 
 .info-item {
     padding-bottom: 20px;
+    i {
+        font-size: 1.25em;
+    }
     &:first-of-type {
         padding-top: 20px;
     }

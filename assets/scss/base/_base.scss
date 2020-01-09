@@ -6,7 +6,7 @@ html {
 
 body {
   color: $color-text-primary;
-  font-size: $base-font-size;
+  font-size: map-get($font-sizes, bs);
   font-family: $font-primary;
   outline: none;
   word-wrap: break-word;
