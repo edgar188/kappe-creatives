@@ -1,11 +1,12 @@
 .info {
     @include position(0, 0, null, null, fixed);
+    z-index: 10;
     text-align: right;
 }
 
 .icon-info-wrapper {
     display: inline-block;
-    background: $color-primary;
+    background-color: $color-primary;
     cursor: pointer;
     &:hover {
         .icon-info-inner {

@@ -15,53 +15,60 @@
             <div class="menu-container">
                 <div class="logo-wrapper">
                     <a href="#" class="logo-link">
-                        <img src="./assets/img/logo.png" class="logo" alt="logo" alt/>
+                        <img src="./assets/img/logo.png" class="logo" alt="logo" alt />
                     </a>
                 </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item active">
-                            <a href="#" class="p-5 nav-link">home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="p-5 nav-link">work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="p-5 nav-link">about</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="p-5 nav-link">blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="p-5 nav-link">services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="p-5 nav-link">contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="filter-wrapper">
-                    <h2 class="p-5 inner-head">Filter<i class="icon-filter"></i></h2>
-                    <ul class="filter-list">
-                        <li class="p-5 filter-item">
-                            <a href="#" class="filter-link active">all works</a>
-                        </li>
-                        <li class="p-5 filter-item">
-                            <a href="#" class="filter-link">web design</a>
-                        </li>
-                        <li class="p-5 filter-item">
-                            <a href="#" class="filter-link">illustration</a>
-                        </li>
-                        <li class="p-5 filter-item">
-                            <a href="#" class="filter-link">photography</a>
-                        </li>
-                        <li class="p-5 filter-item">
-                            <a href="#" class="filter-link">wallpapers</a>
-                        </li>
-                        <li class="p-5 filter-item">
-                            <a href="#" class="filter-link">brochures</a>
-                        </li>
-                    </ul>
+                <div class="hidden-menu">
+                    <button onclick="onMenu()">
+                        <i class="icon-menu"></i>
+                    </button>
+                </div>
+                <div id="navs" class="navs-wrapper">
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="nav-item active">
+                                <a href="#" class="p-5 nav-link">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="p-5 nav-link">work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="p-5 nav-link">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="p-5 nav-link">blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="p-5 nav-link">services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="p-5 nav-link">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="filter-wrapper">
+                        <h2 class="p-5 inner-head">Filter<i class="icon-filter"></i></h2>
+                        <ul class="filter-list">
+                            <li class="p-5 filter-item">
+                                <a href="#" class="filter-link active">all works</a>
+                            </li>
+                            <li class="p-5 filter-item">
+                                <a href="#" class="filter-link">web design</a>
+                            </li>
+                            <li class="p-5 filter-item">
+                                <a href="#" class="filter-link">illustration</a>
+                            </li>
+                            <li class="p-5 filter-item">
+                                <a href="#" class="filter-link">photography</a>
+                            </li>
+                            <li class="p-5 filter-item">
+                                <a href="#" class="filter-link">wallpapers</a>
+                            </li>
+                            <li class="p-5 filter-item">
+                                <a href="#" class="filter-link">brochures</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="p-5 socials-wrapper">
                     <ul class="socials-list">
@@ -355,6 +362,14 @@
             </ul>
         </section>
     </main>
+    <script>
+        function onMenu() {
+            var navsWrapper = document.getElementById('navs');
+            navsWrapper.style["max-width"] !== "100%"
+                ? navsWrapper.setAttribute("style", "max-width: 100%; height: 100%; opacity: 1")
+                : navsWrapper.setAttribute("style", "max-width: 0; height: 0; opacity: 0;");            
+        }
+    </script>
 </body>
 
 </html>

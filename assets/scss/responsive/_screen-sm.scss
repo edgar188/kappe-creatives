@@ -1,4 +1,93 @@
-@media (max-width: $screen-sm) {
-
+@media (max-width: map-get($resolutions, sm)) {
     
+    body {
+        font-size: map-get($font-sizes, sm);
+    }
+
+    .p-4 {
+        padding: 10px;
+    }
+
+    // --------------------- Main section ---------------------
+    .main {
+        flex-wrap: wrap;
+    }
+
+    // --------------------- Menu section ---------------------
+    .menu {
+        min-width: unset;
+        min-height: auto;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .logo-link {
+        margin-top: round(48px * map-get($mlp-values, sm));
+        margin-bottom: round(35px * map-get($mlp-values, sm));
+    }
+
+    .hidden-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        button {
+            width: 100%;
+            padding: 8px 15px;
+            background-color: $color-primary;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.5em;
+            font-weight: 900;
+        }
+    }
+
+    .navs-wrapper {
+        max-width: 0;
+        height: 0;
+        opacity: 0;
+        transition: max-width 0.5s;
+    }
+
+    .filter-list {
+        font-size: 0.9em;
+    }
+
+    .filter-item {
+        display: inline-block;
+        @media (max-width: 570px) {
+            display: block;
+        }
+    }
+
+    .socials-wrapper {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        bottom: 0;
+        background: red;
+        color: #fff; 
+    }
+
+    .home {
+        font-size: 14px;
+        padding-bottom: 72px;
+    }
+
+    .home-item {
+        width: 33.33%;
+    }
+
+    .home-link {
+        margin-top: 10px;
+    }
+
+    .hover-title {
+        font-size: 1.2em;
+    }
+
+    .hover-link-outer {
+        transform: translateY(-15%);
+    }
 }

@@ -27,6 +27,12 @@
     }
 }
 
+.icon-menu {
+    &:before {
+        content: $icon-menu;
+    }
+}
+
 .icon-arrow-right {
     &:before {
         content: $icon-arrow-right;

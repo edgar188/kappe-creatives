@@ -116,6 +116,10 @@ body {
   content: "";
 }
 
+.icon-menu:before {
+  content: "";
+}
+
 .icon-arrow-right:before {
   content: "";
 }
@@ -195,6 +199,10 @@ body {
 .logo {
   max-width: 117px;
   max-height: 61px;
+}
+
+.hidden-menu {
+  display: none;
 }
 
 .nav-list {
@@ -386,12 +394,13 @@ body {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 10;
   text-align: right;
 }
 
 .icon-info-wrapper {
   display: inline-block;
-  background: #1ab5b3;
+  background-color: #1ab5b3;
   cursor: pointer;
 }
 .icon-info-wrapper:hover .icon-info-inner {
@@ -2096,6 +2105,111 @@ body {
 
   .socials-item i {
     padding: 0;
+  }
+}
+@media (min-width: 768) {
+  .navs-wrapper {
+    max-width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+
+  .p-4 {
+    padding: 10px;
+  }
+
+  .main {
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    min-width: unset;
+    min-height: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo-link {
+    margin-top: 34px;
+    margin-bottom: 25px;
+  }
+
+  .hidden-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .hidden-menu button {
+    width: 100%;
+    padding: 8px 15px;
+    background-color: #1ab5b3;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 900;
+  }
+
+  .navs-wrapper {
+    max-width: 0;
+    height: 0;
+    opacity: 0;
+    transition: max-width 0.5s;
+  }
+
+  .filter-list {
+    font-size: 0.9em;
+  }
+
+  .filter-item {
+    display: inline-block;
+  }
+}
+@media (max-width: 768px) and (max-width: 570px) {
+  .filter-item {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .socials-wrapper {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    bottom: 0;
+    background: red;
+    color: #fff;
+  }
+}
+@media (max-width: 768px) {
+  .home {
+    font-size: 14px;
+    padding-bottom: 72px;
+  }
+}
+@media (max-width: 768px) {
+  .home-item {
+    width: 33.33%;
+  }
+}
+@media (max-width: 768px) {
+  .home-link {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .hover-title {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 768px) {
+  .hover-link-outer {
+    transform: translateY(-15%);
   }
 }
 
