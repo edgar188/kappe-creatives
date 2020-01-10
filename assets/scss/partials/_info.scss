@@ -1,6 +1,6 @@
 .info {
     @include position(0, 0, null, null, fixed);
-    z-index: 10;
+    z-index: $z-index-mid;
     text-align: right;
 }
 
@@ -27,14 +27,13 @@
  }
 
 .info-hidden {
-    position: inherit;
-    right: 0;
-    transition: max-height 0.5s;  
-    overflow: hidden;
+    @include position(null, 0, null, null, inherit);
+    transition: max-height $trns-duration-md;  
+    overflow-y: hidden;
     max-height: 0;
+    text-align: left;
     opacity: $opacity-primary;
     background-color: $color-dark;
-    text-align: left;
     color: $color-light;
     &:hover {
         background-color: $color-bg-primary;

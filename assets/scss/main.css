@@ -89,6 +89,16 @@ body {
   box-sizing: inherit;
 }
 
+.container {
+  width: 100%;
+  max-width: 300px;
+  min-width: 300px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .inner-head {
   font-size: 1.1875em;
   font-family: "Robotothin", serif;
@@ -177,7 +187,6 @@ body {
 }
 
 .menu {
-  min-width: 300px;
   min-height: 100vh;
   text-align: right;
   z-index: 10;
@@ -423,11 +432,11 @@ body {
   position: inherit;
   right: 0;
   transition: max-height 0.5s;
-  overflow: hidden;
+  overflow-y: hidden;
   max-height: 0;
+  text-align: left;
   opacity: 0.8;
   background-color: #000;
-  text-align: left;
   color: #fff;
 }
 .info-hidden:hover {
@@ -2140,6 +2149,7 @@ body {
   .menu {
     min-width: unset;
     min-height: auto;
+    max-width: 100%;
     width: 100%;
     text-align: center;
   }

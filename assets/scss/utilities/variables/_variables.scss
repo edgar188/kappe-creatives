@@ -66,9 +66,14 @@ $box-shadow-primary: 10px 0 20px 10px rgba(36, 43, 46, $opacity-secondary);
 $ln-grad-primary: inear-gradient(#333a3e, #2f373b);
 $ln-grad-secondary: linear-gradient(#22adab, #24afad);
 
+// Z-index ---------------------------
+$z-index-min: 0;
+$z-index-mid: 10;
+$z-index-max: 100;
+
 //Container
-// $cont-width: 1138px;
-// $cont-padding: 0px;
+$cont-width: 300px;
+$cont-padding: 0px;
 
 //Resolutions ---------------------------
 $screen-lg: 1280px;

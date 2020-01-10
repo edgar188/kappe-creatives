@@ -18,14 +18,15 @@ body {
   box-sizing: inherit;
 }
 
-// .container {
-//   width: 90%;
-//   max-width: ($cont-width + $cont-padding);
-//   padding-left: ($cont-padding / 2);
-//   padding-right: ($cont-padding / 2);
-//   margin-left: auto;
-//   margin-right: auto;
-// }
+.container {
+  width: 100%;
+  max-width: ($cont-width + $cont-padding);
+  min-width: ($cont-width + $cont-padding);
+  padding-left: ($cont-padding / 2);
+  padding-right: ($cont-padding / 2);
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .inner-head {
   font-size: 1.1875em;
