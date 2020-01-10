@@ -28,22 +28,18 @@
     }
 
     .hidden-menu {
+        @include position(0, null, null, 0);
         display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        button {
-            width: 100%;
-            padding: 8px 15px;
-            background-color: $color-primary;
-            border: $br-none;
-            color: #fff;
-            cursor: pointer;
-            font-size: 1.5em;
-            font-weight: 900;
-            &:hover {
-                color: $color-custom;
-            }
+    }
+
+    .btn-menu {
+        width: 100%;
+        padding: 10px 15px;
+        background-color: $color-primary;
+        border: $br-none;
+        font-size: 1.5em;
+        &:hover {
+            color: $color-custom;
         }
     }
 

@@ -16,14 +16,10 @@
     }
 }
 
-.icon-info-inner {
-    display: inline-block;
-    padding: 10px 15px;
-    color: $color-light;
-    background-color: $color-primary;
+.info-btn {
     border: 1px solid $color-light;
     border-radius: $br-rounded;
-    font-size: 1.75em;
+    height: 52px;
  }
 
 .info-hidden {
