@@ -413,7 +413,7 @@ body {
   background-color: #1ab5b3;
   cursor: pointer;
 }
-.icon-info-wrapper:hover .icon-info-inner {
+.icon-info-wrapper:hover .info-btn {
   color: #FFDD00;
   border-color: #FFDD00;
 }
@@ -1473,6 +1473,7 @@ body {
   padding: 10px 15px;
   color: #fff;
   background-color: #1ab5b3;
+  height: 52px;
 }
 .btn-primary:hover {
   cursor: pointer;
@@ -2068,6 +2069,11 @@ body {
     margin-top: 15px;
   }
 
+  .btn-primary {
+    padding: 8px 10px;
+    height: 45px;
+  }
+
   .menu {
     min-width: 270px;
   }
@@ -2087,11 +2093,6 @@ body {
 
   .home-item {
     width: 33.33%;
-  }
-
-  .info-btn {
-    padding: 5px 7px;
-    height: 38px;
   }
 
   .info-list {
@@ -2153,6 +2154,10 @@ body {
     flex-wrap: wrap;
   }
 
+  .btn-primary {
+    padding: 10px;
+  }
+
   .menu {
     min-width: unset;
     min-height: auto;
@@ -2174,14 +2179,10 @@ body {
   }
 
   .btn-menu {
-    width: 100%;
-    padding: 10px 15px;
-    background-color: #1ab5b3;
+    padding: 8px 14px;
+    font-size: 2em;
+    height: 50px;
     border: 0;
-    font-size: 1.5em;
-  }
-  .btn-menu:hover {
-    color: #FFDD00;
   }
 
   .navs-wrapper {
@@ -2244,6 +2245,15 @@ body {
   }
 }
 @media (max-width: 480px) {
+  .p-2 {
+    padding: 3px;
+  }
+
+  .btn-primary {
+    font-size: 1.5em;
+    height: 42px;
+  }
+
   .logo-link {
     margin-top: 43px;
     margin-bottom: 32px;
@@ -2252,6 +2262,10 @@ body {
   .logo {
     max-width: 100px;
     max-height: 50px;
+  }
+
+  .btn-menu {
+    height: 45px;
   }
 
   .home-item {
@@ -2267,6 +2281,15 @@ body {
   }
 }
 @media (max-width: 360px) {
+  .btn-primary {
+    font-size: 1.3em;
+    height: 38px;
+  }
+
+  .btn-menu {
+    height: 41px;
+  }
+
   .home-item {
     width: 100%;
   }

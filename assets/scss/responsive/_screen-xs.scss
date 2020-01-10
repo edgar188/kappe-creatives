@@ -1,5 +1,14 @@
 @media (max-width:  map-get($resolutions, xs)) {
-        
+    
+    .p-2 {
+        padding: 3px;
+    }
+
+    .btn-primary {
+        font-size: 1.5em;
+        height: 42px;
+    }
+
     // --------------------- Menu section ---------------------
     
     .logo-link {
@@ -10,6 +19,10 @@
     .logo {
         max-width: 100px;
         max-height: 50px;
+    }
+
+    .btn-menu {
+        height: 45px;
     }
 
     // --------------------- Home section ---------------------

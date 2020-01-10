@@ -1,5 +1,15 @@
 @media (max-width:  map-get($resolutions, xxs)) {
-        
+    
+    .btn-primary {
+        font-size: 1.3em;
+        height: 38px;
+    }
+
+    // --------------------- Menu section ---------------------
+    .btn-menu {
+        height: 41px;
+    }
+    
     // --------------------- Home section ---------------------
     
     .home-item {
