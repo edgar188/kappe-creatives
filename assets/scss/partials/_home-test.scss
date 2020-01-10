@@ -1,5 +1,8 @@
 .home {
-    width: auto;
+    width: 85%;
+    @media (max-width: map-get($resolutions, sm)) {
+        width: 100%;
+    }
 }
 
 .home-list {
@@ -7,9 +10,11 @@
 }
 
 .home-item {
-    position: relative;
+    background-image: url("../img/photo-147.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: $perc-xs;
-    transition: $trns-delay;
     &:hover {
         .hover-content {
             opacity: $opacity-primary;
@@ -17,21 +22,12 @@
     }
 }
 
-
-.home-img {
-    display: block;
-    height: $perc-max;
-    width: $perc-max;
-}
-
 .hover-content {
-    @include position(0, null, null, 0);
-    width: $perc-max;
-    height: $perc-max;
     text-align: center;
     opacity: $opacity-none;
     color: $color-light;
     background-color: $color-primary;
+    padding: 20px 0;
 }
 
 .hover-inner {
