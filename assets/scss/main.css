@@ -343,8 +343,9 @@ body {
 }
 
 .home-img {
-  width: 100%;
+  display: block;
   height: 100%;
+  width: 100%;
 }
 
 .hover-content {
@@ -2205,6 +2206,7 @@ body {
 }
 @media (max-width: 768px) {
   .home {
+    font-size: 1em;
     padding-bottom: 72px;
   }
 }
