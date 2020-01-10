@@ -9,14 +9,14 @@
     background-color: $color-primary;
     cursor: pointer;
     &:hover {
-        .info-btn {
+        .btn-info {
             color: $color-custom;
             border-color: $color-custom;
         }
     }
 }
 
-.info-btn {
+.btn-info {
     border: 1px solid $color-light;
     border-radius: $br-rounded;
     height: 52px;

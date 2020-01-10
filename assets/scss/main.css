@@ -413,12 +413,12 @@ body {
   background-color: #1ab5b3;
   cursor: pointer;
 }
-.icon-info-wrapper:hover .info-btn {
+.icon-info-wrapper:hover .btn-info {
   color: #FFDD00;
   border-color: #FFDD00;
 }
 
-.info-btn {
+.btn-info {
   border: 1px solid #fff;
   border-radius: 50%;
   height: 52px;
@@ -1477,6 +1477,7 @@ body {
 }
 .btn-primary:hover {
   cursor: pointer;
+  color: #FFDD00;
 }
 
 .m-1 {
