@@ -1,4 +1,8 @@
-@media (max-width: $screen-xxs) {
-
-
+@media (max-width:  map-get($resolutions, xxs)) {
+        
+    // --------------------- Home section ---------------------
+    
+    .home-item {
+        width: 100%;
+    }
 }

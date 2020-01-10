@@ -1,13 +1,15 @@
-function onInfo(target) {
-    var hiddenNode = target.nextElementSibling;
+function onInfo() {
+    //var infoNode = document.getElementById("info-hidden");
+    var infoNode = document.getElementById("info-hidden");
 
-    hiddenNode.style.display !== "block"
-        ? hiddenNode.setAttribute("style", "display: block; visibility: visible;")
-        : hiddenNode.setAttribute("style", "display: none; visibility: hidden;");
+    infoNode.className === "info-hidden"
+        ? infoNode.className += " info-list-open"
+        : infoNode.className = "info-hidden";
 }
 
-setInterval(() => {
-    if(window.innerWidth > 768) {
-        document.getElementById("navs").setAttribute("style", "max-width: 100%;height 100%; opacity: 1")
-    }
-}, 1000);
+function onMenu() {
+    var navsWrapper = document.getElementById('navs');
+    navsWrapper.className === "navs-wrapper"
+        ? navsWrapper.className += " navs-open"
+        : navsWrapper.className = "navs-wrapper";
+}

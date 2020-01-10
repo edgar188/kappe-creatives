@@ -26,20 +26,29 @@
     font-size: 1.75em;
  }
 
-.info-list {
-    display: none;
-    visibility: hidden;
-    padding-left: 18px;
-    padding-right: 80px;
-    text-align: left;
+.info-hidden {
+    position: inherit;
+    right: 0;
+    transition: max-height 0.5s;  
+    overflow: hidden;
+    max-height: 0;
     opacity: $opacity-primary;
     background-color: $color-dark;
+    text-align: left;
     color: $color-light;
-    transition: background-color $trns-duration-md;
     &:hover {
-        background-color: $color-bg-custom; 
+        background-color: $color-bg-primary;
         opacity: $opacity-default;
     }
+}
+
+.info-list {
+    padding-left: 18px;
+    padding-right: 80px;
+}
+
+.info-list-open {
+    max-height: 150px;
 }
 
 .info-item {

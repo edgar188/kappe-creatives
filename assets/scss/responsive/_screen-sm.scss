@@ -35,21 +35,29 @@
             width: 100%;
             padding: 8px 15px;
             background-color: $color-primary;
-            border: none;
+            border: $br-none;
             color: #fff;
             cursor: pointer;
             font-size: 1.5em;
             font-weight: 900;
+            &:hover {
+                color: $color-custom;
+            }
         }
     }
 
     .navs-wrapper {
-        max-width: 0;
+        width: 0;
         height: 0;
-        opacity: 0;
-        transition: max-width 0.5s;
+        overflow-x: hidden;
+        transition: width 0.5s;
     }
 
+    .navs-open {
+        width: 100%;
+        height: 100%;
+    }
+    
     .filter-list {
         font-size: 0.9em;
     }
@@ -63,11 +71,9 @@
 
     .socials-wrapper {
         position: absolute;
-        z-index: 10;
-        width: 100%;
         bottom: 0;
-        background: red;
-        color: #fff; 
+        width: 100%;
+        background-color: $color-bg-primary; 
     }
 
     .home {
