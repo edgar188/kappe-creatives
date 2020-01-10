@@ -1,12 +1,12 @@
-@media (max-width: $screen-lg) {
-  // body {
-  //   font-size: 15px;
-  // }
+@media (max-width: map-get($resolutions, lg)) {
+  body {
+    font-size: map-get($font-sizes, lg);
+  }
 }
 
-@media (max-width: $screen-md) {
-  // body {
-  //   font-size: 14px;
-  // }
+@media (max-width: map-get($resolutions, sm)) {
+  body {
+      font-size: map-get($font-sizes, sm);
+  }
 }
 

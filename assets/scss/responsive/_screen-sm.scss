@@ -1,9 +1,5 @@
 @media (max-width: map-get($resolutions, sm)) {
-    
-    body {
-        font-size: map-get($font-sizes, sm);
-    }
-
+ 
     .p-4 {
         padding: 10px;
     }
@@ -19,10 +15,9 @@
 
     // --------------------- Menu section ---------------------
     .menu {
+        max-width: $perc-max;
         min-width: unset;
-        min-height: auto;
-        max-width: 100%;
-        width: 100%;
+        min-height: unset;
         text-align: center;
     }
     
@@ -44,15 +39,15 @@
     }
 
     .navs-wrapper {
-        width: 0;
-        height: 0;
+        width: $perc-min;
+        height: $perc-min;
         overflow-x: hidden;
-        transition: width 0.5s;
+        transition: width $trns-duration-md;
     }
 
     .navs-open {
-        width: 100%;
-        height: 100%;
+        width: $perc-max;
+        height: $perc-max;
     }
     
     .filter-list {
@@ -67,19 +62,18 @@
     }
 
     .socials-wrapper {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
+        @include position(null, null, 0);
+        width: $perc-max;
         background-color: $color-bg-primary; 
     }
 
     .home {
-        font-size: 14px;
+        font-size: 1em;
         padding-bottom: 72px;
     }
 
     .home-item {
-        width: 33.33%;
+        width: $perc-sm;
     }
 
     .home-link {

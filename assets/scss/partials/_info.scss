@@ -26,7 +26,7 @@
     @include position(null, 0, null, null, inherit);
     transition: max-height $trns-duration-md;  
     overflow-y: hidden;
-    max-height: 0;
+    max-height: $perc-min;
     text-align: left;
     opacity: $opacity-primary;
     background-color: $color-dark;

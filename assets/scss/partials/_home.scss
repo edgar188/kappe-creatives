@@ -8,7 +8,7 @@
 
 .home-item {
     position: relative;
-    width: 25%;
+    width: $perc-xs;
     transition: $trns-delay;
     &:hover {
         .hover-content {
@@ -18,14 +18,14 @@
 }
 
 .home-img {
-    width: 100%;
-    height: 100%;
+    width: $perc-max;
+    height: $perc-max;
 }
 
 .hover-content {
     @include position(0, null, null, 0);
-    width: 100%;
-    height: 100%;
+    width: $perc-max;
+    height: $perc-max;
     text-align: center;
     opacity: $opacity-none;
     color: $color-light;
@@ -33,7 +33,7 @@
 }
 
 .hover-inner {
-    width: 100%;
+    width: $perc-max;
 }
 
 .hover-link-outer {

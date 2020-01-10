@@ -1,9 +1,5 @@
 @media (max-width: map-get($resolutions, lg)) {
 
-    body {
-        font-size: map-get($font-sizes, lg);
-    }
-
     .p-5 {
         padding: 20px;
     }
@@ -57,7 +53,7 @@
 
     // --------------------- Home section ---------------------
     .home-item {
-        width: 33.33%;
+        width: $perc-sm;
     }
 
     // --------------------- Info Box ---------------------

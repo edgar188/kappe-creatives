@@ -1,6 +1,6 @@
 html {
   position: relative;
-  min-height: 100%;
+  min-height: $perc-max;
   box-sizing: border-box;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: $perc-max;
   max-width: ($cont-width + $cont-padding);
   min-width: ($cont-width + $cont-padding);
   padding-left: ($cont-padding / 2);
@@ -33,10 +33,4 @@ body {
   font-family: $font-secondary;
   color: $color-primary;
 }
-
-// .block-wrapper {
-//   background-color: $color-light;
-//   border-radius: $br-md;
-//   box-shadow: $box-shadow-primary;
-// }
 

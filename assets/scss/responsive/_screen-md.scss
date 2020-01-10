@@ -25,20 +25,12 @@
     }
 
     .home-item {
-        width: 50%;
+        width: $perc-md;
     }
 
     .socials-item {
         i {
             padding: 0;
         }
-    }
-}
-
-@media (min-width: 768) {
-    .navs-wrapper {
-        max-width: 100%;
-        height: 100%;
-        opacity: 1;
     }
 }
