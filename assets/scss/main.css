@@ -327,11 +327,6 @@ body {
 .home {
   width: 85%;
 }
-@media (max-width: 768px) {
-  .home {
-    width: 100%;
-  }
-}
 
 .home-list {
   display: flex;
@@ -339,10 +334,9 @@ body {
 }
 
 .home-item {
-  background-image: url("../img/photo-147.jpeg");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   width: 25%;
 }
 .home-item:hover .hover-content {
@@ -350,11 +344,12 @@ body {
 }
 
 .hover-content {
-  text-align: center;
   opacity: 0;
   color: #fff;
   background-color: #1ab5b3;
-  padding: 20px 0;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .hover-inner {
@@ -2203,6 +2198,7 @@ body {
 }
 @media (max-width: 768px) {
   .home {
+    width: 100%;
     font-size: 1em;
     padding-bottom: 72px;
   }
@@ -2215,6 +2211,12 @@ body {
 @media (max-width: 768px) {
   .home-link {
     margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .hover-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 @media (max-width: 768px) {
@@ -2253,6 +2255,11 @@ body {
 
   .home-item {
     width: 50%;
+  }
+
+  .hover-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .hover-title {

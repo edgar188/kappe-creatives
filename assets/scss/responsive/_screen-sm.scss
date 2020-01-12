@@ -67,7 +67,10 @@
         background-color: $color-bg-primary; 
     }
 
+    // --------------------- Home section ---------------------
+
     .home {
+        width: 100%;
         font-size: 1em;
         padding-bottom: 72px;
     }
@@ -78,6 +81,11 @@
 
     .home-link {
         margin-top: 10px;
+    }
+
+    .hover-content {
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .hover-title {

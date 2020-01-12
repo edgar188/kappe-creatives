@@ -1,5 +1,5 @@
 .home {
-    width: auto;
+    width: $perc-lg;
 }
 
 .home-list {
@@ -7,9 +7,8 @@
 }
 
 .home-item {
-    position: relative;
+    @include bg-img(null, no-repeat, $perc-max $perc-max, null, center);
     width: $perc-xs;
-    transition: $trns-delay;
     &:hover {
         .hover-content {
             opacity: $opacity-primary;
@@ -17,21 +16,13 @@
     }
 }
 
-
-.home-img {
-    display: block;
-    height: $perc-max;
-    width: $perc-max;
-}
-
 .hover-content {
-    @include position(0, null, null, 0);
-    width: $perc-max;
-    height: $perc-max;
-    text-align: center;
     opacity: $opacity-none;
     color: $color-light;
     background-color: $color-primary;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .hover-inner {
