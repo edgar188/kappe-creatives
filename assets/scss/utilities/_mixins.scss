@@ -38,12 +38,6 @@
   }
 }
 
-@mixin ofl-ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 @mixin dsp-flex($wrap: null, $just-cont: null, $direction: null, $aln-itm: null, $aln-cont: null) {
   display: flex;
   flex-wrap: $wrap;
@@ -52,6 +46,13 @@
   align-items: $aln-itm;
   align-content: $aln-cont;
 }
+
+@mixin ofl-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 
 
 

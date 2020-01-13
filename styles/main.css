@@ -436,6 +436,7 @@ body {
 .info-list {
   padding-left: 18px;
   padding-right: 80px;
+  max-width: 300px;
 }
 
 .info-list-open {
@@ -443,7 +444,9 @@ body {
 }
 
 .info-item {
-  padding-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .info-item i {
   font-size: 1.25em;

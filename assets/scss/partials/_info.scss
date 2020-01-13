@@ -40,6 +40,7 @@
 .info-list {
     padding-left: 18px;
     padding-right: 80px;
+    max-width: 300px;
 }
 
 .info-list-open {
@@ -47,7 +48,7 @@
 }
 
 .info-item {
-    padding-bottom: 20px;
+    @include ofl-ellipsis;
     i {
         font-size: 1.25em;
     }
