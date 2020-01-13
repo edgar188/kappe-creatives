@@ -2272,6 +2272,10 @@ body {
   .hover-desc {
     font-size: 1em;
   }
+
+  .info-list {
+    max-width: 220px;
+  }
 }
 @media (max-width: 360px) {
   .btn-primary {
