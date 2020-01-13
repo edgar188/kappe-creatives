@@ -7,7 +7,7 @@
 }
 
 .home-item {
-    @include bg-img(null, no-repeat, $perc-max $perc-max);
+    @include bg-img(null, no-repeat, cover, null, center);
     width: $perc-xs;
     &:hover {
         .hover-content {
