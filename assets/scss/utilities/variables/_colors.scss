@@ -1,0 +1,30 @@
+// Color Usage ---------------------------
+$color-light: #fff;
+$color-dark: #000;
+$color-primary: #1ab5b3;
+$color-custom: #FFDD00;
+
+// Text Base Colors ---------------------------
+$color-text-primary: #6b7072;
+
+// Background Base Colors ---------------------------
+$color-bg-primary: #242b2e;
+
+// Social Icons Background Colors ---------------------------
+$social-colors: (
+    flickr: #fbfbfb,
+    tumbler: #d24f26,
+    twitter: #3bbee9,
+    pinterest: #dd3427,
+    dribbble: #ff69bd,
+    vimeo: #3bbee9,
+    facebook: #375395
+);
+
+// Border Colors ---------------------------
+$color-br-primary: #202426;
+$color-br-secondary: #169291;
+
+// Gradients ---------------------------
+$ln-grad-primary: inear-gradient(#333a3e, #2f373b);
+$ln-grad-secondary: linear-gradient(#22adab, #24afad);
